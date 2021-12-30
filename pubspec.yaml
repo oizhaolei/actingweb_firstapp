@@ -1,0 +1,71 @@
+name: first_app
+description: An application that manages and receives alerts from ActingWeb actors
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.6.1+16
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  oauth2_client: ^2.3.1
+  cupertino_icons: ^1.0.3
+  meta: ^1.7.0
+  provider: ^6.0.1
+  shared_preferences: ^2.0.11
+  google_maps_flutter: ^2.1.1
+  google_maps_flutter_web: ^0.3.2
+  geocoding: ^2.0.1
+  firebase_core: ^1.10.6
+  firebase_analytics: ^9.0.4
+  firebase_crashlytics: ^2.4.4
+  firebase_messaging: ^11.2.4
+  geolocator: ^8.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  flutter_lints: ^1.0.4
+  test: ^1.17.12
+  flutter_launcher_icons: ^0.9.0
+  convert: ^3.0.1
+  mockito: ^5.0.16
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/actingweb-header-small.png
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/Nunito.ttf
+
+  # Enable generation of localized Strings from arb file AppLocalizations.
+  generate: true
